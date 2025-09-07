@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Família Moadir</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-white" style="font-family: 'Montserrat', sans-serif;">
+  <!-- Menu -->
+  <header class="fixed w-full bg-black shadow-md z-50">
+    <nav class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center p-4 text-white">
+      <!-- Logo -->
+      <img src="LogoBranca1.png" alt="Logo FMR" class="h-14 cursor-pointer mb-2 md:mb-0"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+
+      <!-- Menu -->
+      <div class="flex justify-center space-x-8 uppercase font-bold text-lg md:text-xl">
+        <div class="flex justify-center space-x-8 uppercase font-bold text-lg md:text-xl">
+          <a href="#"
+            class="relative hover:text-red-500 focus:text-red-500 active:text-red-500 transition duration-300 
+            after:content-[''] after:block after:w-0 after:h-[2px] after:bg-red-500 after:transition-all after:duration-300 after:mx-auto hover:after:w-full">
+            Home
+          </a>
+          <a href="#sobre"
+            class="relative hover:text-red-500 focus:text-red-500 active:text-red-500 transition duration-300 
+            after:content-[''] after:block after:w-0 after:h-[2px] after:bg-red-500 after:transition-all after:duration-300 after:mx-auto hover:after:w-full">
+            Sobre
+          </a>
+          <a href="#musica"
+            class="relative hover:text-red-500 focus:text-red-500 active:text-red-500 transition duration-300 
+            after:content-[''] after:block after:w-0 after:h-[2px] after:bg-red-500 after:transition-all after:duration-300 after:mx-auto hover:after:w-full">
+            Música
+          </a>
+          <a href="#contato"
+            class="relative hover:text-red-500 focus:text-red-500 active:text-red-500 transition duration-300 
+            after:content-[''] after:block after:w-0 after:h-[2px] after:bg-red-500 after:transition-all after:duration-300 after:mx-auto hover:after:w-full">
+            Contato
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Hero -->
+  <section id="carrossel" class="h-screen relative overflow-hidden">
+    <!-- Slides -->
+    <div id="slides" class="h-full w-full relative">
+      <!-- Cada slide -->
+      <div class="absolute inset-0 transition-opacity duration-1000 opacity-100">
+        <img src="imagens_carrossel/IMG_1.jpg" alt="Moadir" class="w-full h-full object-cover">
+        <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white text-4xl font-bold"">
+          <h2 class=" text-4xl md:text-6xl font-bold p-6 rounded-lg text-white">Moadir</h2>
+        </div>
+      </div>
+
+      <div class="absolute inset-0 transition-opacity duration-1000 opacity-0">
+        <img src="imagens_carrossel/IMG_2.jpg" alt="Marquinhos Ferreira" class="w-full h-full object-cover">
+        <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white text-4xl font-bold"">
+          <h2 class=" text-4xl md:text-6xl font-bold p-6 rounded-lg text-white">Marcos Ferreira</h2>
+        </div>
+      </div>
+
+      <div class="absolute inset-0 transition-opacity duration-1000 opacity-0">
+        <img src="imagens_carrossel/IMG_3.jpg" alt="Marcio Sorriso" class="w-full h-full object-cover">
+        <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white text-4xl font-bold">
+          <h2 class="text-4xl md:text-6xl font-bold p-6 rounded-lg text-white">Marcio Sorriso</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="bg-yellow-600 text-black">
+    <div class="max-w-6xl mx-auto p-12">
+      <h2 class="text-4xl font-bold mb-12 uppercase text-center tracking-widest">Sobre a Família Moadir</h2>
+
+      <!-- Sobre o Grupo -->
+      <div class="mb-16 flex flex-col md:flex-row items-center gap-8">
+        <img src="imagens_sobre/IMG_202501.jpg" alt="Família Moadir"
+          class="w-full md:w-1/3 rounded-lg shadow-lg object-cover transform hover:scale-105 transition duration-300">
+        <p class="text-lg md:text-base leading-relaxed md:flex-1">
+          A Família Moadir leva para o palco todo seu carisma e criatividade a favor da majestosa arte do samba e suas
+          vertentes. Com uma apresentação envolvente, o grupo interpreta clássicos de grandes mestres como Cartola,
+          Nelson
+          Cavaquinho, Roberto Ribeiro e Paulinho da Viola, além de sucessos que circulam nas atuais rodas de samba, como
+          Zeca Pagodinho, Arlindo Cruz, Xande de Pilares e Dudu Nobre.
+        </p>
+      </div>
+
+      <!-- História e Trajetória -->
+      <div class="mb-16">
+        <h3 class="text-2xl font-bold mb-6 uppercase tracking-wide">História e Trajetória</h3>
+        <p class="text-lg leading-relaxed mb-6">
+          A paixão pelo samba nasceu no Morro do Andaraí, com o patriarca da família, que desde cedo se encantou pela
+          Escola de Samba Acadêmicos do Salgueiro, onde foi passista no grupo de “samba-show” Trio Pelé. Sua trajetória
+          inclui passagens por diversas Escolas de Samba, palcos no Brasil e no exterior, apresentações com a trupe do
+          saudoso Sargentelli e shows com grandes nomes da música, como Elza Soares.
+        </p>
+        <p class="text-lg leading-relaxed mb-6">
+          Seguindo os passos do pai, os filhos Márcio Sorriso e Marquinhos Ferreira se aprofundaram no estudo dos ritmos
+          percussivos e se tornaram músicos experientes em shows, gravações e rodas de samba. O resultado é um trabalho
+          familiar que vem sendo elogiado por onde passa — como diz o ditado, “a fruta não cai longe do pé”.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+          <img src="imagens_sobre/IMG-202501 (4).jpg" alt=""
+            class="w-full rounded-lg shadow-md object-cover transform hover:scale-105 transition duration-300">
+          <img src="imagens_sobre/IMG-202501 (10).jpg" alt=""
+            class="w-full rounded-lg shadow-md object-cover transform hover:scale-105 transition duration-300">
+          <img src="imagens_sobre/IMG-202501 (6).jpg" alt=""
+            class="w-full rounded-lg shadow-md object-cover transform hover:scale-105 transition duration-300">
+
+        </div>
+      </div>
+
+      <!-- Estilo e Experiência -->
+      <div class="mb-16">
+        <h3 class="text-2xl font-bold mb-6 uppercase tracking-wide">Estilo e Experiência</h3>
+        <p class="text-lg leading-relaxed mb-4">
+          O talento da Família Moadir é marcado por uma energia contagiante e uma incrível capacidade de interação com o
+          público. Cada show é único, envolvente e pensado para encantar pessoas de todas as idades. O repertório é
+          construído de acordo com o perfil de cada evento, valorizando sempre o samba em suas diversas formas, sem
+          abrir
+          mão da qualidade musical e do profissionalismo.
+        </p>
+        <p class="text-lg leading-relaxed mb-4">
+          A Família Moadir já se apresentou em diversas cidades do Brasil, em espaços como clubes, hotéis, casas
+          noturnas,
+          eventos corporativos, bailes de carnaval e festivais no exterior, incluindo apresentações para Allianz, Oi –
+          B2B, Porto Seguro, Festival Varilux de Cinema Francês, Bernhoeft, Comida di Buteco, CAARJ – OAB e O Show.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Mais que um espetáculo musical, a apresentação da Família Moadir é uma experiência de alegria, samba e emoção.
+        </p>
+      </div>
+      <section id="album-carrossel" class="py-12 bg-yellow-600 text-black px-4 md:px-16">
+
+        <div class="relative w-full max-w-2xl mx-auto">
+          <!-- Imagem do carrossel -->
+          <img id="carrossel-img" src="imagens_sobre/IMG-202501 (1).jpg" alt="Foto 1"
+            class="w-full h-auto object-contain rounded-lg shadow-lg">
+
+          <!-- Botões de navegação -->
+          <button id="prev-btn"
+            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-lg hover:bg-black/70">&lt;</button>
+          <button id="next-btn"
+            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white px-3 py-2 rounded-lg hover:bg-black/70">&gt;</button>
+        </div>
+      </section>
+    </div>
+  </section>
+  </section>
+
+
+
+
+  <!-- Vídeos -->
+  <section id="musica" class="relative text-center text-white py-28">>
+    <!-- Fundo -->
+    <div class="absolute inset-0">
+      <img src="imagens/IMG_5.jpg" alt="Fundo Ouça" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+    </div>
+
+    <!-- Conteúdo -->
+    <div class="relative max-w-6xl mx-auto p-8">
+      <h2 class="text-3xl font-bold mb-6 uppercase tracking-widest">Ouça e Assista</h2>
+      <p class="text-lg mb-8">Acompanhe a Família Moadir nas plataformas digitais e no YouTube:</p>
+
+      <!-- Plataformas -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+        <!-- Spotify -->
+        <a href="https://open.spotify.com/album/0whl9oB3tT1H8rwQrRNFba" target="_blank" class="flex flex-col items-center bg-green-600 bg-opacity-70 text-white p-6 rounded-xl shadow-lg 
+         hover:bg-opacity-100 hover:scale-105 transform transition duration-300">
+          <span class="text-2xl font-bold">Spotify</span>
+        </a>
+
+        <!-- SoundCloud -->
+        <a href="https://soundcloud.com/familiamoadir" target="_blank" class="flex flex-col items-center bg-green-600 bg-opacity-70 text-white p-6 rounded-xl shadow-lg 
+         hover:bg-opacity-100 hover:scale-105 transform transition duration-300">
+          <span class="text-2xl font-bold">SoundCloud</span>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/channel/UC4rGddwCROZix1RtKMp-ETg" target="_blank" class="flex flex-col items-center bg-green-600 bg-opacity-70 text-white p-6 rounded-xl shadow-lg 
+         hover:bg-opacity-100 hover:scale-105 transform transition duration-300">
+          <span class="text-2xl font-bold">YouTube</span>
+        </a>
+      </div>
+
+      <!-- Vídeos -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <a href="https://www.youtube.com/watch?v=6xx_Nn4nABY" target="_blank"
+          class="relative group block rounded-xl overflow-hidden shadow-lg">
+          <img src="https://img.youtube.com/vi/6xx_Nn4nABY/hqdefault.jpg" alt="Vídeo Moadir"
+            class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <span class="text-white text-xl font-bold">▶ Assistir</span>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=5KvDzkGP-5A" target="_blank"
+          class="relative group block rounded-xl overflow-hidden shadow-lg">
+          <img src="https://img.youtube.com/vi/5KvDzkGP-5A/hqdefault.jpg" alt="Vídeo Marquinhos Ferreira"
+            class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <span class="text-white text-xl font-bold">▶ Assistir</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contato -->
+  <section id="contato" class="bg-gradient-to-r from-black via-red-900 to-black text-white py-28">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 px-6">
+
+      <!-- Formulário -->
+      <div>
+        <h2 class="text-4xl font-bold mb-6 uppercase">Fale Conosco</h2>
+        <form action="https://formspree.io/f/myzdlwyd" method="POST" class="space-y-4">
+          <input type="text" name="nome" placeholder="Seu nome" required
+            class="w-full p-3 rounded bg-gray-900 border border-gray-700 focus:border-red-500 focus:ring-red-500">
+
+          <input type="email" name="email" placeholder="Seu e-mail" required
+            class="w-full p-3 rounded bg-gray-900 border border-gray-700 focus:border-red-500 focus:ring-red-500">
+
+          <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required
+            class="w-full p-3 rounded bg-gray-900 border border-gray-700 focus:border-red-500 focus:ring-red-500"></textarea>
+
+          <button type="submit"
+            class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+            Enviar Mensagem
+          </button>
+        </form>
+      </div>
+
+      <!-- Contatos diretos -->
+      <div class="flex flex-col justify-center space-y-4 bg-gray-900 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold uppercase">Contatos Diretos</h3>
+        <p><strong>Cel.:</strong> (21) 97993-4373</p>
+        <p><strong>Cel.:</strong> (21) 98020-1069</p>
+        <p><strong>Email:</strong> <a href="mailto:familiamoadir@outlook.com"
+            class="text-red-400 hover:underline">familiamoadir@outlook.com</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/familiamoadir" target="_blank"
+            class="text-red-400 hover:underline">@familiamoadir</a></p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="bg-gray-800 text-center p-4">
+    <p>&copy; 2025 Família Moadir - Todos os direitos reservados</p>
+    <p>Desenvolvido por Carolina Ferreira</p>
+  </footer>
+</body>
+
+</html>

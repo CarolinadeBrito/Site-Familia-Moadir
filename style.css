@@ -1,0 +1,4 @@
+/* Extra caso queira estilizar além do Tailwind */
+body {
+  scroll-behavior: smooth;
+}
